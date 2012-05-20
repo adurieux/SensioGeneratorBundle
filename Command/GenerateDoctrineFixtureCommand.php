@@ -21,8 +21,6 @@ use Symfony\Component\Console\Output\OutputInterface;
  * 
  * Prints the PHP code corresponding to an entity from the DB.
  * 
- * @version     1.0
- * 
  * @author      Antoine Durieux
  */
 class GenerateDoctrineFixtureCommand extends GenerateDoctrineCommand
