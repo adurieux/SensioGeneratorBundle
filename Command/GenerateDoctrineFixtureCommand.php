@@ -17,8 +17,6 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
- * class GenerateFixturesDoctrineCommand extends Command
- * 
  * Prints the PHP code corresponding to an entity from the DB.
  * 
  * @author      Antoine Durieux
@@ -70,8 +68,6 @@ class GenerateDoctrineFixtureCommand extends GenerateDoctrineCommand
     // =========================================================================
     
     /**
-     * protected function configure()
-     * 
      * Configuration function.
      */
     protected function configure()
@@ -102,8 +98,6 @@ EOT
     // =========================================================================
     
     /**
-     * protected function execute(InputInterface $input, OutputInterface $output)
-     * 
      * Main function.
      */
     protected function execute(InputInterface $input, OutputInterface $output)
@@ -120,8 +114,6 @@ EOT
     
     
     /**
-     * private function generateEntity($className,$id)
-     * 
      * This function generates the PHP code equivalent to one entity.
      * 
      * @param       string      $className
@@ -280,8 +272,6 @@ EOT
     // =========================================================================
     
     /**
-     * private static function getSetter($fieldName)
-     * 
      * Returns a quick and dirty estimation of the setter name.
      * 
      * @param       string      $fieldName
@@ -293,8 +283,6 @@ EOT
     }
     
     /**
-     * private static function getGetter($fieldName)
-     * 
      * Returns a quick and dirty estimation of the getter name.
      * 
      * @param       string      $fieldName
@@ -306,8 +294,6 @@ EOT
     }
     
     /**
-     * private static function getEntityShortName($className)
-     * 
      * Returns the short name of a given class.
      * 
      * @param       string      $className
@@ -320,8 +306,6 @@ EOT
     }
     
     /**
-     * private static function cleanClassName($className)
-     * 
      * This function cleans up the class name :
      * - remove a leading \ if necessary
      *
