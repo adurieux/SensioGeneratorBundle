@@ -349,8 +349,8 @@ EOT
      * This function cleans up the class name :
      * - remove a leading \ if necessary
      *
-     * @param string $className
-     * @return string 
+     * @param       string      $className
+     * @return      string 
      */
     private static function cleanClassName($className) {
         $className = preg_replace("#^\\\#", '', $className);
