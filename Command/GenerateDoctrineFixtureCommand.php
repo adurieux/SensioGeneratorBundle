@@ -73,10 +73,6 @@ class GenerateDoctrineFixtureCommand extends GenerateDoctrineCommand
      * protected function configure()
      * 
      * Configuration function.
-     * 
-     * @version     1.0
-     * 
-     * @author      Antoine Durieux
      */
     protected function configure()
     {
@@ -109,10 +105,6 @@ EOT
      * protected function execute(InputInterface $input, OutputInterface $output)
      * 
      * Main function.
-     * 
-     * @version     1.0
-     * 
-     * @author      Antoine Durieux
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
@@ -131,10 +123,6 @@ EOT
      * private function generateEntity($className,$id)
      * 
      * This function generates the PHP code equivalent to one entity.
-     * 
-     * @version     1.0
-     * 
-     * @author      Antoine Durieux
      * 
      * @param       string      $className
      * @param       int         $id
@@ -296,10 +284,6 @@ EOT
      * 
      * Returns a quick and dirty estimation of the setter name.
      * 
-     * @version     1.0
-     * 
-     * @author      Antoine Durieux
-     *
      * @param       string      $fieldName
      * @return      string      
      */
@@ -313,10 +297,6 @@ EOT
      * 
      * Returns a quick and dirty estimation of the getter name.
      * 
-     * @version     1.0
-     * 
-     * @author      Antoine Durieux
-     *
      * @param       string      $fieldName
      * @return      string      
      */
@@ -330,10 +310,6 @@ EOT
      * 
      * Returns the short name of a given class.
      * 
-     * @version     1.0
-     * 
-     * @author      Antoine Durieux
-     *
      * @param       string      $className
      * @return      string
      */
