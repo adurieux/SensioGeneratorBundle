@@ -27,6 +27,21 @@ use Symfony\Component\Console\Output\OutputInterface;
  */
 class GenerateDoctrineFixtureCommand extends GenerateDoctrineCommand
 {
+    /**
+     * Associations of the base object will be generated as Doctrine references.
+     * @var string 
+     */
+    const MODE_REFERENCES = 'references';
+    /**
+     * Associations of the base object will be recursively generated as PHP code.
+     * @var string 
+     */
+    const MODE_PHP_CODE = 'php-code';
+    /**
+     * Associations of the base object will be generated as existing PHP variables.
+     * @var string 
+     */
+    const MODE_PHP_VARIABLES = 'php-variables';
     
     /**
      * The output channel.
@@ -51,26 +66,6 @@ class GenerateDoctrineFixtureCommand extends GenerateDoctrineCommand
      * @var \Doctrine\ORM\EntityManager
      */
     private $em;
-    
-    // =========================================================================
-    // Constants
-    // =========================================================================
-    
-    /**
-     * Associations of the base object will be generated as Doctrine references.
-     * @var string 
-     */
-    const MODE_REFERENCES = 'references';
-    /**
-     * Associations of the base object will be recursively generated as PHP code.
-     * @var string 
-     */
-    const MODE_PHP_CODE = 'php-code';
-    /**
-     * Associations of the base object will be generated as existing PHP variables.
-     * @var string 
-     */
-    const MODE_PHP_VARIABLES = 'php-variables';
     
     // =========================================================================
     // Configuration
