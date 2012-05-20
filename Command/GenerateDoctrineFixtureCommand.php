@@ -134,8 +134,8 @@ EOT
             $this->generatedMap[$className] = array();
         }
         if (isset($this->generatedMap[$className][$id])) {
-            return $entityName;
             $this->output->writeln('// Entity '.$className.' - '.$id.' was already generated.');
+            return $entityName;
         }
         $this->generatedMap[$className][$id] = true;
         
