@@ -27,9 +27,6 @@ use Symfony\Component\Console\Output\OutputInterface;
  */
 class GenerateDoctrineFixtureCommand extends GenerateDoctrineCommand
 {
-    // =========================================================================
-    // Properties
-    // =========================================================================
     
     /**
      * The output channel.
